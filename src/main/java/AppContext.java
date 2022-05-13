@@ -9,7 +9,7 @@ public class AppContext {
 	@Bean
 	public Greeter greeter() {
 		Greeter g = new Greeter();
-		g.setFormat("%s, 안녕하세요!");
+		g.setFormat( "안녕하세요!, %s");
 		return g;
 	}
 

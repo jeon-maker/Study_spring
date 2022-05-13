@@ -10,6 +10,8 @@ public class Main {
 		Greeter g = ctx.getBean("greeter", Greeter.class);
 		String msg = g.greet("스프링");
 		System.out.println(msg);
+		System.out.println(String.format("hi ", 10));
 		ctx.close();
+
 	}
 }
