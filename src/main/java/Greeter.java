@@ -5,7 +5,7 @@ public class Greeter {
 	private String format;
 
 	public String greet(String guest) {
-		return String.format(guest , format);
+		return String.format(format, guest);
 	}
 
 	public void setFormat(String format) {

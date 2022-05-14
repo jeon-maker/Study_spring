@@ -9,14 +9,15 @@ public class AppContext {
 	@Bean
 	public Greeter greeter() {
 		Greeter g = new Greeter();
-		g.setFormat( "안녕하세요!, %s");
+		g.setFormat( "내 이름은 greeter. 입력받은 값은 :  %s");
 		return g;
 	}
+	
 	@Bean
 	public Greeter greeter1() {
-		Greeter g = new Greeter();
-		g.setFormat( "안녕하세요!, %s");
-		return g;
+		Greeter g1 = new Greeter();
+		g1.setFormat( "my name is greeter1. input value :  %s");
+		return g1;
 	}
 
 }
