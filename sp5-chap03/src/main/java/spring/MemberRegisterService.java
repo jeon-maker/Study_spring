@@ -18,6 +18,7 @@ public class MemberRegisterService {
 				req.getEmail(), req.getPassword(), req.getName(), 
 				LocalDateTime.now());
 		memberDao.insert(newMember);
+		System.out.println("MemberRegisterService - Regist 실행 완료.\n");
 		return newMember.getId();
 	}
 }

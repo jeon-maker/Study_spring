@@ -19,6 +19,8 @@ public class Member {
 	}
 
 	void setId(Long id) {
+		System.out.println("Member - SetId 실행 완료.\n");
+
 		this.id = id;
 	}
 

@@ -8,6 +8,7 @@ public class RegisterRequest {
 	private String name;
 
 	public String getEmail() {
+		System.out.println("RegisterRequest - getEmail 실행 완료.\n");
 		return email;
 	}
 
@@ -16,6 +17,8 @@ public class RegisterRequest {
 	}
 
 	public String getPassword() {
+		System.out.println("RegisterRequest - getPassword 실행 완료.\n");
+
 		return password;
 	}
 
@@ -32,6 +35,8 @@ public class RegisterRequest {
 	}
 
 	public String getName() {
+		System.out.println("RegisterRequest - getName 실행 완료.\n");
+
 		return name;
 	}
 

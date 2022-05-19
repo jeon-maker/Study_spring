@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MemberDao {
-
+	// MemberDao는 회원정보를 Map에 담음
 	private static long nextId = 0;
 
 	private Map<String, Member> map = new HashMap<>();
@@ -17,6 +17,8 @@ public class MemberDao {
 	public void insert(Member member) {
 		member.setId(++nextId);
 		map.put(member.getEmail(), member);
+		System.out.println("MemberDao - insert 실행 완료.\n");
+
 	}
 
 	public void update(Member member) {
